@@ -1,0 +1,18 @@
+{ 
+    "manifest_version": 2, //固定的
+    "name": "John's First Extension", //擴充的名字
+    "version": "1.0", //版本號
+    "description": "The first extension that John made.", //擴充描述
+    "browser_action": { //擴充載入後生成圖示
+        "default_icon": "joker_deBack.png",//圖示圖片
+        "default_title": "Hollo, World", //滑鼠移到上面顯示的文字
+        "default_popup": "popup.html" //點擊圖片產生的文件
+    }, 
+    "permissions": [ //允許擴充訪問的 url
+        "http://*/", 
+        "bookmarks", 
+        "tabs", 
+        "history",
+        "https://ajax.googleapis.com/"
+    ]
+}
